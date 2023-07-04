@@ -1,6 +1,6 @@
 const form = document.querySelector('form');
 const section = document.querySelector('section');
-const books = JSON.parse(localStorage.getItem('Books')) || [];
+let books = JSON.parse(localStorage.getItem('Books')) || [];
 function storeBooks() {
   localStorage.setItem('Books', JSON.stringify(books));
 }
@@ -31,13 +31,8 @@ function addBook(event) {
 }
 function removeBook(event) {
   if (event.target.id !== '') {
-    for (let i = 0; i < books.length; i += 1) {
-      if (books[i].id === event.target.id) {
-        books.splice(i, 1);
-        displayBooks();
-        break;
-      }
-    }
+    books = books.filter((book) => book.id !== event.target.id);
+    displayBooks();
   }
 }
 section.addEventListener('click', removeBook);
