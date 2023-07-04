@@ -1,6 +1,6 @@
 const form = document.querySelector('form');
 const section = document.querySelector('section');
-const books = JSON.parse(localStorage.getItem('Books'));
+const books = JSON.parse(localStorage.getItem('Books')) || [];
 function storeBooks() {
   localStorage.setItem('Books', JSON.stringify(books));
 }
