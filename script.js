@@ -9,8 +9,8 @@ function displayBooks() {
   const fragment = new DocumentFragment();
   books.forEach((book) => {
     const article = document.createElement('article');
-    let articleHTML = `<div>${book.title}</div>`;
-    articleHTML += `<div>${book.author}</div>`;
+    let articleHTML = `<p>${book.title}</p>`;
+    articleHTML += `<p>${book.author}</p>`;
     articleHTML += `<button id="${book.id}">Remove</button>`;
     articleHTML += '<hr>';
     article.innerHTML = articleHTML;
