@@ -1,21 +1,52 @@
+html,
+body,
+h1,
+h2,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .header {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-}
-
-.bookform {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  margin: auto;
-  padding: 20px;
   text-align: center;
-  gap: 15px;
 }
 
-.header2 {
-  margin: 0px;
-  font-size: 20px;
-  font-weight: bold;
+.list {
+  width: 500px;
+  list-style: none;
+  border: 1px solid;
+  margin: 15px auto;
+}
+
+.list li {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.list li:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.line {
+  width: 50px;
+}
+
+.form {
+  width: 300px;
+  display: flex;
+  gap: 15px;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.form input,
+.form button {
+  padding: 5px 10px;
+}
+
+.form button {
+  align-self: flex-end;
 }
