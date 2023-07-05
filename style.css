@@ -1,0 +1,21 @@
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.bookform {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  gap: 15px;
+}
+
+.header2 {
+  margin: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
