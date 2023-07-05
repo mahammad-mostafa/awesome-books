@@ -26,7 +26,7 @@ p {
 }
 
 .list li:nth-child(odd) {
-  background-color: #f1f1f1;
+  background-color: #ddd;
 }
 
 .line {
