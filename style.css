@@ -1,0 +1,51 @@
+html,
+body,
+h1,
+h2,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+}
+
+.list {
+  width: 500px;
+  list-style: none;
+  border: 1px solid;
+  margin: 15px auto;
+}
+
+.list li {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.list li:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.line {
+  width: 50px;
+}
+
+.form {
+  width: 300px;
+  display: flex;
+  gap: 15px;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.form input {
+  padding: 5px 10px;
+}
+
+.form button {
+  align-self: flex-end;
+}
