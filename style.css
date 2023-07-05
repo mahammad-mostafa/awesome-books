@@ -42,8 +42,7 @@ p {
   margin: auto;
 }
 
-.form input,
-.form button {
+.form input {
   padding: 5px 10px;
 }
 
