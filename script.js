@@ -1,22 +1,20 @@
-const form = document.querySelector('form');
-const section = document.querySelector('section');
+const form = document.querySelector('.form');
+const list = document.querySelector('.list');
 let books = JSON.parse(localStorage.getItem('Books')) || [];
 function storeBooks() {
   localStorage.setItem('Books', JSON.stringify(books));
 }
 function displayBooks() {
-  section.innerHTML = '';
+  list.innerHTML = '';
   const fragment = new DocumentFragment();
   books.forEach((book) => {
-    const article = document.createElement('article');
-    let articleHTML = `<p>${book.title}</p>`;
-    articleHTML += `<p>${book.author}</p>`;
-    articleHTML += `<button id="${book.id}">Remove</button>`;
-    articleHTML += '<hr>';
-    article.innerHTML = articleHTML;
-    fragment.appendChild(article);
+    const item = document.createElement('li');
+    let itemHTML = `<p>"${book.title}" by ${book.author}</p>`;
+    itemHTML += `<button id="${book.id}">Remove</button>`;
+    item.innerHTML = itemHTML;
+    fragment.appendChild(item);
   });
-  section.appendChild(fragment);
+  list.appendChild(fragment);
   storeBooks();
 }
 function addBook(event) {
@@ -35,6 +33,6 @@ function removeBook(event) {
     displayBooks();
   }
 }
-section.addEventListener('click', removeBook);
+list.addEventListener('click', removeBook);
 form.addEventListener('submit', addBook);
 displayBooks();
