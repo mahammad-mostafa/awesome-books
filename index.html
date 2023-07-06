@@ -9,19 +9,59 @@
   </head>
 
   <body>
+    <!--header start-->
+    <header class="container header">
+      <nav>
+        <ul class="header-menu">
+          <li class="header-menu-first">Awesome Books</li>
+          <li><a href="#list">List</a></li>
+          <li><a href="#add">Add new</a></li>
+          <li class="header-menu-last"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <time> 12th Feb 1992</time>
+    </header>
+    <!--header end-->
 
-    <h1 class="header">Awesome Books</h1>
+    <main>
 
-    <ul class="list"></ul>
+      <!--list start-->
+      <section class="container content">
+        <h1>Awesome Books</h1>
+        <ul class="content-list"></ul>
+      </section>
+      <!--list end-->
 
-    <hr class="line">
+      <!--add start-->
+      <section class="container content">
+        <form class="content-form">
+          <h1>Add a new book</h1>
+          <input type="text" name="title" placeholder="Title" required>
+          <input type="text" name="author" placeholder="Author" required>
+          <button type="submit">Add</button>
+        </form>
+      </section>
+      <!--add end-->
 
-    <form class="form">
-      <h2>Add a new book</h2>
-      <input type="text" name="title" placeholder="Title" required>
-      <input type="text" name="author" placeholder="Author" required>
-      <button type="submit">Add</button>
-    </form>
+      <!--contact start-->
+      <section class="container content">
+        <h1>Contact Information</h1>
+        <p>Do you have any questions or you just want to say "Hello"? You can reach out to us!</p>
+        <ul class="content-contact">
+          <li>Our e-mail: mail@mail.com</li>
+          <li>Our phone number: 0043586534422</li>
+          <li>Our addres: Streetname 22, 84503 City, Country</li>
+        </ul>
+      </section>
+      <!--contact end-->
+
+    </main>
+
+    <!--footer start-->
+    <footer class="container">
+      <p class="footer">Copyright &hellip;</p>
+    </footer>
+    <!--footer end-->
 
     <script src="script.js"></script>
 
