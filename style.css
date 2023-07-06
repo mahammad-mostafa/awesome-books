@@ -43,6 +43,10 @@ a:hover,
   display: flex !important;
 }
 
+.rotate {
+  transform: rotateY(0) !important;
+}
+
 .header {
   text-align: end;
 }
@@ -86,6 +90,8 @@ a:hover,
   gap: 15px;
   flex-direction: column;
   margin: 15px auto;
+  transition: all 0.5s ease;
+  transform: rotateY(90deg);
 }
 
 .content h1 {
