@@ -33,9 +33,11 @@ function displayContent(hash) {
     if (page === hash && content.classList.contains('visible') === false) {
       link.classList.add('active');
       content.classList.add('visible');
+      setTimeout(() => content.classList.add('rotate'), 1);
     } else if (content.classList.contains('visible')) {
       link.classList.remove('active');
       content.classList.remove('visible');
+      content.classList.remove('rotate');
     }
   });
 }
