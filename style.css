@@ -94,7 +94,8 @@ a:hover,
   transform: rotateY(90deg);
 }
 
-.content h1 {
+.content h1,
+.content-list h2 {
   text-align: center;
 }
 
@@ -103,6 +104,9 @@ a:hover,
   border: 1px solid;
 }
 
+.content-list h2 {
+  color: #aaa;
+}
 .content-list li {
   display: flex;
   gap: 10px;
