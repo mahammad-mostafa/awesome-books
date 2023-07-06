@@ -23,6 +23,12 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover,
+.active {
+  color: #00f;
 }
 
 .container {
@@ -33,13 +39,16 @@ a {
   box-sizing: border-box;
 }
 
+.visible {
+  display: flex !important;
+}
+
 .header {
   text-align: end;
 }
 
 .header-menu {
   padding: 5px 0;
-  overflow: hidden;
   white-space: nowrap;
   align-items: center;
   justify-content: flex-end;
@@ -58,6 +67,8 @@ a {
 }
 
 .header-menu .header-menu-first {
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-right: auto;
 }
 
@@ -71,7 +82,7 @@ a {
 }
 
 .content {
-  display: flex;
+  display: none;
   gap: 15px;
   flex-direction: column;
   margin: 15px auto;
@@ -88,12 +99,19 @@ a {
 
 .content-list li {
   display: flex;
+  gap: 10px;
   padding: 10px;
   justify-content: space-between;
 }
 
 .content-list li:nth-child(odd) {
   background-color: #ddd;
+}
+
+.content-list p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .content-form {
