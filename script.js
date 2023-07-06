@@ -20,8 +20,8 @@ class Books {
   }
 }
 const books = new Books();
-const list = document.querySelector('.list');
-const form = document.querySelector('.form');
+const list = document.querySelector('.content-list');
+const form = document.querySelector('.content-form');
 function displayBooks() {
   list.innerHTML = '';
   const fragment = new DocumentFragment();
