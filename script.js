@@ -42,16 +42,20 @@ function displayContent(hash) {
   });
 }
 function displayBooks() {
-  list.innerHTML = '';
-  const fragment = new DocumentFragment();
-  books.bookList.forEach((book) => {
-    const item = document.createElement('li');
-    let itemHTML = `<p>"${book.title}" by ${book.author}</p>`;
-    itemHTML += `<button id="${book.id}">Remove</button>`;
-    item.innerHTML = itemHTML;
-    fragment.appendChild(item);
-  });
-  list.appendChild(fragment);
+  if (books.bookList.length === 0) {
+    list.innerHTML = '<h2>No available books</h2>';
+  } else {
+    list.innerHTML = '';
+    const fragment = new DocumentFragment();
+    books.bookList.forEach((book) => {
+      const item = document.createElement('li');
+      let itemHTML = `<p>"${book.title}" by ${book.author}</p>`;
+      itemHTML += `<button id="${book.id}">Remove</button>`;
+      item.innerHTML = itemHTML;
+      fragment.appendChild(item);
+    });
+    list.appendChild(fragment);
+  }
 }
 function contentEvent(event) {
   event.preventDefault();
