@@ -9,19 +9,42 @@
   </head>
 
   <body>
+    <header> 
+      <nav >
+        <ul class="nav-menu">
+          <li><a href="#">List</a></li>
+          <li><a href="#">Add new</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <time class="time"> 12th Feb 1992</time>
+    </header>
 
-    <h1 class="header">Awesome Books</h1>
+    <section class="page-list">
+      <h1 class="header">Awesome Books</h1>
 
     <ul class="list"></ul>
 
+    </section>
+    <section class="add-new">
+      <form class="form">
+        <h2>Add a new book</h2>
+        <input type="text" name="title" placeholder="Title" required>
+        <input type="text" name="author" placeholder="Author" required>
+        <button type="submit">Add</button>
+      </form>
+
+    </section>
+    <section class="contact">
+<h1>Contact Information</h1>
+<h2>Do you have question, you can gladly ask.</h2>
+
+
+    </section>
+    
     <hr class="line">
 
-    <form class="form">
-      <h2>Add a new book</h2>
-      <input type="text" name="title" placeholder="Title" required>
-      <input type="text" name="author" placeholder="Author" required>
-      <button type="submit">Add</button>
-    </form>
+    
 
     <script src="script.js"></script>
 
