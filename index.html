@@ -9,42 +9,59 @@
   </head>
 
   <body>
-    <header>
+    <!--header start-->
+    <header class="container header">
       <nav>
-        <ul class="nav-menu">
+        <ul class="header-menu">
+          <li>Awesome Books</li>
           <li><a href="#">List</a></li>
           <li><a href="#">Add new</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <time class="time"> 12th Feb 1992</time>
+      <time> 12th Feb 1992</time>
     </header>
+    <!--header end-->
 
-    <section class="page-list">
-      <h1 class="header">Awesome Books</h1>
-      <ul class="list"></ul>
-    </section>
+    <main>
 
-    <section class="add-new">
-      <form class="form">
-        <h2>Add a new book</h2>
-        <input type="text" name="title" placeholder="Title" required>
-        <input type="text" name="author" placeholder="Author" required>
-        <button type="submit">Add</button>
-      </form>
-    </section>
+      <!--list start-->
+      <section class="container content">
+        <h1>Awesome Books</h1>
+        <ul class="content-list"></ul>
+      </section>
+      <!--list end-->
 
-    <section class="contact">
-      <h1>Contact Information</h1>
-      <p>Do you have any questions or you just want to say "Hello"? You can reach out to us!</p>
-      <ul>
-        <li>Our e-mail: mail@mail.com</li>
-        <li>Our phone number: 0043586534422</li>
-        <li>Our addres: Streetname 22, 84503 City, Country</li>
-      </ul>
-    </section>
+      <!--add start-->
+      <section class="container content">
+        <form class="content-form">
+          <h1>Add a new book</h1>
+          <input type="text" name="title" placeholder="Title" required>
+          <input type="text" name="author" placeholder="Author" required>
+          <button type="submit">Add</button>
+        </form>
+      </section>
+      <!--add end-->
 
-    <footer>Copyright &hellip;</footer>
+      <!--contact start-->
+      <section class="container content">
+        <h1>Contact Information</h1>
+        <p>Do you have any questions or you just want to say "Hello"? You can reach out to us!</p>
+        <ul class="content-contact">
+          <li>Our e-mail: mail@mail.com</li>
+          <li>Our phone number: 0043586534422</li>
+          <li>Our addres: Streetname 22, 84503 City, Country</li>
+        </ul>
+      </section>
+      <!--contact end-->
+
+    </main>
+
+    <!--footer start-->
+    <footer class="container">
+      <p class="footer">Copyright &hellip;</p>
+    </footer>
+    <!--footer end-->
 
     <script src="script.js"></script>
 
