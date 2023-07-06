@@ -27,18 +27,22 @@ Check the below contents for further details about this project.
 
 # 📖 Description
 
-This project is about building a book management app. It contains two main files (`index.html` / `script.js`).
-It also includes some config linters for (`HTML` / `JavaScript`) in the `.github` folder. 
+This project is about building a book management app. It contains three main files (`index.html` / `style.css` / `script.js`).
+It also includes some config linters for (`HTML` / `CSS3` / `JavaScript`) in the `.github` folder. 
 
 📌 **Live Demo:**
 - See the project live from [here](https://mahammad-mostafa.github.io/awesome-books-app)
 
 📌 **Tech Stack:**
 - Page strucutre is built with `HTML5`
+- Styling and alignment built with `CSS3`
 - Interaction and dynamic content built with `JavaScript`
 
 📌 **Key Features:**
 - Single page app where all content is loaded dynamically
+- Three navigation links (list / add / contact)
+- Transition effect in content loading
+- Active content link is highlighted
 - Displays a list of books with title and author values
 - Inserts new book with a form input of title and author fields
 - Removes any book item with a relevant remove button
@@ -62,7 +66,7 @@ You can easily download or fork this repository and work on it immadiately!
 - Simply download or fork this repository.
 
 📌 **Deployment:**
-- You can deploy this project by uploading three files (`index.html` / `script.js`) to a live server.
+- You can deploy this project by uploading three files (`index.html` / `style.css` / `script.js`) to a live server.
 
 <p align="right"><a href="#title">back to top</a></p>
 
