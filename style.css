@@ -107,6 +107,7 @@ a:hover,
 .content-list h2 {
   color: #aaa;
 }
+
 .content-list li {
   display: flex;
   gap: 10px;
