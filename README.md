@@ -40,6 +40,7 @@ It also includes some config linters for (`HTML` / `CSS3` / `JavaScript`) in the
 
 📌 **Key Features:**
 - Single page app where all content is loaded dynamically
+- Responsive layout with all screen sizes
 - Three navigation links (list / add / contact)
 - Transition effect in content loading
 - Active content link is highlighted
