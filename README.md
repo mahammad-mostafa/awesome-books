@@ -2,7 +2,7 @@
 
 <!-- TITLE -->
 
-# 🏷️ Awesome Books App
+# 🏷️ Awesome Books
 
 This is the first project in the second module in the **Microverse** program.
 <br/>
