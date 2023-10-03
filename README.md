@@ -31,7 +31,7 @@ This project is about building a book management app. It contains three main fil
 It also includes some config linters for (`HTML` / `CSS3` / `JavaScript`) in the `.github` folder. 
 
 📌 **Live Demo:**
-- See the project live from [here](https://mahammad-mostafa.github.io/awesome-books-app)
+- See the project live from [here](https://mahammad-mostafa.github.io/awesome-books)
 
 📌 **Tech Stack:**
 - Page strucutre is built with `HTML5`
